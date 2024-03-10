@@ -1,0 +1,34 @@
+{
+  "name": "poton",
+  "version": "0.1.441",
+  "author": "markpolo1224",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markpolo1224/poton.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "check": "npm run format && npm run lint",
+    "dev": "nodemon index.js",
+    "format": "prettier --write \"**/*.+(js|yml|yaml|json)\""
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-jest": "22.5.1",
+    "eslint-plugin-node": "9.0.1",
+    "husky": "2.3.0",
+    "nodemon": "1.19.0",
+    "prettier": "1.17.1"
+  },
+  "dependencies": {
+    "koa-compress": "3.0.0",
+    "koa-helmet": "4.1.0",
+    "koa-logger": "3.2.0",
+    "koa-router": "7.4.0",
+    "uuid": "3.3.2"
+  }
+}
